@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		765EEE5816032B0A008C2F59 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765EEE5716032B0A008C2F59 /* AddressBook.framework */; };
+		765EEE5B16032B1B008C2F59 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765EEE5A16032B1B008C2F59 /* AddressBookUI.framework */; };
+		765EEE5F16032BBF008C2F59 /* PhoneAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765EEE5E16032BBF008C2F59 /* PhoneAddressViewController.m */; };
+		765EEE6116032BC6008C2F59 /* PhoneAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 765EEE6016032BC6008C2F59 /* PhoneAddressViewController.xib */; };
+		765EEE6316032F9D008C2F59 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 765EEE6216032F9D008C2F59 /* 02.png */; };
+		765EEE6516032FA3008C2F59 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 765EEE6416032FA3008C2F59 /* 01.png */; };
+		765EEE6716032FAA008C2F59 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 765EEE6616032FAA008C2F59 /* phone.png */; };
 		76855B1315FDD6BF0069EA96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76855B1215FDD6BF0069EA96 /* UIKit.framework */; };
 		76855B1515FDD6BF0069EA96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76855B1415FDD6BF0069EA96 /* Foundation.framework */; };
 		76855B1715FDD6BF0069EA96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76855B1615FDD6BF0069EA96 /* CoreGraphics.framework */; };
@@ -31,6 +38,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		765EEE5716032B0A008C2F59 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		765EEE5A16032B1B008C2F59 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		765EEE5D16032BB6008C2F59 /* PhoneAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneAddressViewController.h; sourceTree = "<group>"; };
+		765EEE5E16032BBF008C2F59 /* PhoneAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneAddressViewController.m; sourceTree = "<group>"; };
+		765EEE6016032BC6008C2F59 /* PhoneAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneAddressViewController.xib; sourceTree = "<group>"; };
+		765EEE6216032F9D008C2F59 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		765EEE6416032FA3008C2F59 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		765EEE6616032FAA008C2F59 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		76855B0E15FDD6BF0069EA96 /* ToolBoxDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolBoxDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76855B1215FDD6BF0069EA96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		76855B1415FDD6BF0069EA96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765EEE5B16032B1B008C2F59 /* AddressBookUI.framework in Frameworks */,
+				765EEE5816032B0A008C2F59 /* AddressBook.framework in Frameworks */,
 				76C97BE115FEC2F000540EC2 /* CoreLocation.framework in Frameworks */,
 				76C97BDF15FEC2E000540EC2 /* MapKit.framework in Frameworks */,
 				76C97BDC15FEC2D500540EC2 /* CoreFoundation.framework in Frameworks */,
@@ -83,9 +100,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		765EEE5C16032B4F008C2F59 /* phoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				765EEE5D16032BB6008C2F59 /* PhoneAddressViewController.h */,
+				765EEE5E16032BBF008C2F59 /* PhoneAddressViewController.m */,
+				765EEE6016032BC6008C2F59 /* PhoneAddressViewController.xib */,
+			);
+			name = phoneNumber;
+			sourceTree = "<group>";
+		};
 		76855B0315FDD6BF0069EA96 = {
 			isa = PBXGroup;
 			children = (
+				765EEE5A16032B1B008C2F59 /* AddressBookUI.framework */,
+				765EEE5716032B0A008C2F59 /* AddressBook.framework */,
 				76C97BE015FEC2F000540EC2 /* CoreLocation.framework */,
 				76C97BDE15FEC2E000540EC2 /* MapKit.framework */,
 				76C97BDB15FEC2D500540EC2 /* CoreFoundation.framework */,
@@ -116,6 +145,7 @@
 		76855B1815FDD6BF0069EA96 /* ToolBoxDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				765EEE5C16032B4F008C2F59 /* phoneNumber */,
 				76855B3C15FDD9500069EA96 /* RootViewController.h */,
 				76855B3D15FDD9500069EA96 /* RootViewController.m */,
 				76C97BE215FEC33A00540EC2 /* LineViewController.h */,
@@ -132,6 +162,9 @@
 		76855B1915FDD6BF0069EA96 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				765EEE6416032FA3008C2F59 /* 01.png */,
+				765EEE6216032F9D008C2F59 /* 02.png */,
+				765EEE6616032FAA008C2F59 /* phone.png */,
 				76F9681A15FF2AFE00E02710 /* close.png */,
 				76F9681B15FF2AFE00E02710 /* launcher.png */,
 				76C97BE715FECA4A00540EC2 /* itemImage.png */,
@@ -218,6 +251,10 @@
 				76C97BE815FECA4A00540EC2 /* itemImage.png in Resources */,
 				76F9681C15FF2AFE00E02710 /* close.png in Resources */,
 				76F9681D15FF2AFE00E02710 /* launcher.png in Resources */,
+				765EEE6116032BC6008C2F59 /* PhoneAddressViewController.xib in Resources */,
+				765EEE6316032F9D008C2F59 /* 02.png in Resources */,
+				765EEE6516032FA3008C2F59 /* 01.png in Resources */,
+				765EEE6716032FAA008C2F59 /* phone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +275,7 @@
 				76855B3B15FDD7480069EA96 /* MyLauncherViewController.m in Sources */,
 				76855B3E15FDD9500069EA96 /* RootViewController.m in Sources */,
 				76C97BE415FEC34A00540EC2 /* LineViewController.m in Sources */,
+				765EEE5F16032BBF008C2F59 /* PhoneAddressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
