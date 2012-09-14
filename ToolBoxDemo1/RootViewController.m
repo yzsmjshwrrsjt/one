@@ -10,8 +10,9 @@
 #import "MyLauncherItem.h"
 #import "CustomBadge.h"
 #import "LineViewController.h"
+#import "PhoneAddressViewController.h"
 
-
+//sdhfoafd
 @interface RootViewController ()
 
 @end
@@ -36,10 +37,13 @@
     
     //Add your view controllers here to be picked up by the launcher; remember to import them above
     [[self appControllers] setObject:[LineViewController class] forKey:@"LineViewController"];
+    [[self appControllers] setObject:[PhoneAddressViewController class] forKey:@"PhoneAddressViewController"];
     
     if (![self hasSavedLauncherItems])
     {
-       [self.launcherView setPages:[NSMutableArray arrayWithObjects:[NSMutableArray arrayWithObjects:[[MyLauncherItem alloc] initWithTitle:@"跑步助手" iPhoneImage:@"itemImage" iPadImage:@"itemImage" target:@"LineViewController" targetTitle:@"跑步助手" deletable:YES ],                              nil],nil]];
+        [self.launcherView setPages:[NSMutableArray arrayWithObjects:[NSMutableArray arrayWithObjects:[[MyLauncherItem alloc] initWithTitle:@"跑步助手" iPhoneImage:@"itemImage" iPadImage:@"itemImage" target:@"LineViewController" targetTitle:@"跑步助手" deletable:YES ],
+                                                                      [[MyLauncherItem alloc] initWithTitle:@"号码归属地查询" iPhoneImage:@"itemImage" iPadImage:@"itemImage" target:@"PhoneAddressViewController" targetTitle:@"号码归属地查询" deletable:NO],nil],nil]];
+        
 //        LineViewController *lc =[[LineViewController alloc]initWithNibName:nil bundle:nil];
 //        [self.navigationController pushViewController:lc animated:YES];
     }
